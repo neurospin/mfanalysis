@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pymultifracs.simul.mrw &#8212; PyMultiFracs 1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/font-source-code-pro.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/font-source-sans-pro.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pymultifracs.simul.fbm" href="pymultifracs.simul.fbm.html" />
+    <link rel="prev" title="pymultifracs.wavelet.WaveletTransform" href="pymultifracs.wavelet.WaveletTransform.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          PyMultiFracs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../examples.html">Examples</a></li>
+                <li><a href="../reference.html">API</a></li>
+                <li><a href="../theory.html">Theory</a></li>
+            
+            
+              
+              
+            
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="pymultifracs-simul-mrw">
+<h1>pymultifracs.simul.mrw<a class="headerlink" href="#pymultifracs-simul-mrw" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="pymultifracs.simul.mrw">
+<code class="sig-prename descclassname">pymultifracs.simul.</code><code class="sig-name descname">mrw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shape</span></em>, <em class="sig-param"><span class="n">H</span></em>, <em class="sig-param"><span class="n">lam</span></em>, <em class="sig-param"><span class="n">L</span></em>, <em class="sig-param"><span class="n">sigma</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">method</span><span class="o">=</span><span class="default_value">'cme'</span></em>, <em class="sig-param"><span class="n">z0</span><span class="o">=</span><span class="default_value">(None, None)</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pymultifracs.simul.mrw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a realization of fractional Brownian motion using circulant
+matrix embedding.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>shape</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><code class="docutils literal notranslate"><span class="pre">tuple</span></code></a>(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>)</span></dt><dd><p>If scalar, it is the  number of samples. If tuple it is (N, R),
+the number of samples and realizations, respectively.</p>
+</dd>
+<dt><strong>H</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a></span></dt><dd><p>Hurst exponent</p>
+</dd>
+<dt><strong>lam</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a></span></dt><dd><p>Lambda, intermittency parameter</p>
+</dd>
+<dt><strong>L</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a></span></dt><dd><p>Integral scale</p>
+</dd>
+<dt><strong>sigma</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a></span></dt><dd><p>Variance of process</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt><strong>mrw</strong><span class="classifier"><a class="reference external" href="https://numpy.org/devdocs/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.21.dev0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a></span></dt><dd><p>Synthesized mrw realizations. If <cite>shape</cite> is scalar,
+fbm is ofshape (N,). Otherwise, it is of shape (N, R).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<dl class="citation">
+<dt class="label" id="r6322b422f044-1"><span class="brackets">1</span></dt>
+<dd><p>Bacry, Delour, Muzy, “Multifractal Random Walk”, Physical Review E,
+2001</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div style='clear:both'></div></div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, M. Dumeur, P. Ciuciu, V. van Wassenhove, P. Abry.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
