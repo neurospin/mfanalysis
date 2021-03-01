@@ -88,7 +88,7 @@
 <h1>pymultifracs.wavelet.WaveletTransform<a class="headerlink" href="#pymultifracs-wavelet-wavelettransform" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="pymultifracs.wavelet.WaveletTransform">
-<em class="property">class </em><code class="sig-prename descclassname">pymultifracs.wavelet.</code><code class="sig-name descname">WaveletTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wt_coefs</span></em>, <em class="sig-param"><span class="n">wt_leaders</span></em>, <em class="sig-param"><span class="n">j2_eff</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pymultifracs.wavelet.WaveletTransform" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pymultifracs.wavelet.</span></code><code class="sig-name descname"><span class="pre">WaveletTransform</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wt_coefs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wt_leaders</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j2_eff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta_p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pymultifracs.wavelet.WaveletTransform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Aggregates the output of wavelet analysis</p>
 <dl class="field-list">
 <dt class="field-odd">Attributes</dt>
@@ -98,6 +98,8 @@
 <dt><strong>wt_leaders</strong><span class="classifier"><a class="reference internal" href="pymultifracs.multiresquantity.MultiResolutionQuantity.html#pymultifracs.multiresquantity.MultiResolutionQuantity" title="pymultifracs.multiresquantity.MultiResolutionQuantity"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiResolutionQuantity</span></code></a></span></dt><dd><p>Wavelet leaders, or p-leaders, depending on the value of <code class="docutils literal notranslate"><span class="pre">p_exp</span></code> passed</p>
 </dd>
 <dt><strong>j2_eff</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a></span></dt><dd><p>Maximum scale effectively used during the computation of the coefficients</p>
+</dd>
+<dt><strong>eta_p</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a></span></dt><dd><p>Estimated value of <span class="math notranslate nohighlight">\(\eta_p\)</span>, before applying p-leader correction</p>
 </dd>
 </dl>
 </dd>

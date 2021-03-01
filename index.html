@@ -16,8 +16,6 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="API Reference" href="reference.html" />
@@ -101,65 +99,17 @@ or by cloning the repository first, and then installing the package which will m
 </div>
 <div class="section" id="installing-the-package-only">
 <h1>Installing the package only<a class="headerlink" href="#installing-the-package-only" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="using-conda">
-<h2>Using conda<a class="headerlink" href="#using-conda" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="creating-a-new-environment-recommended">
-<h3>Creating a new environment (recommended)<a class="headerlink" href="#creating-a-new-environment-recommended" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>wget https://raw.githubusercontent.com/neurospin/pymultifracs/master/env.yml
-conda env create -f env.yml
-</pre></div>
-</div>
-</div>
-<div class="section" id="installing-into-a-pre-existing-environment">
-<h3>Installing into a pre-existing environment<a class="headerlink" href="#installing-into-a-pre-existing-environment" title="Permalink to this headline">¶</a></h3>
-<p>Note that this package requires a recent version of python (&gt;=3.7)</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>wget https://raw.githubusercontent.com/neurospin/pymultifracs/master/env.yml
-conda env update -f env.yml --name <span class="nv">$ENVNAME</span>
-</pre></div>
-</div>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="using-pip">
-<h2>Using pip<a class="headerlink" href="#using-pip" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install -U https://github.com/neurospin/pymultifracs/archive/master.zip
 </pre></div>
 </div>
 </div>
-</div>
 <div class="section" id="cloning-the-whole-repository-including-examples">
 <h1>Cloning the whole repository (including examples)<a class="headerlink" href="#cloning-the-whole-repository-including-examples" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id1">
-<h2>Using conda<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Using conda, the simplest way to proceed is to use the <code class="code docutils literal notranslate"><span class="pre">meta.yml</span></code> file to create or update
-an environment, and then install the editable local version of pymultifracs on top.</p>
-<div class="section" id="id2">
-<h3>Creating a new environment (recommended)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/neurospin/pymultifracs.git@master
-conda env create -f pymultifracs/meta.yml
-pip install -e pymultifracs
-</pre></div>
-</div>
-</div>
-<div class="section" id="id3">
-<h3>Installing into a pre-existing environment<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>Note that this package requires a recent version of python (&gt;=3.7)</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/neurospin/pymultifracs
-conda env update -f pymultifracs/meta.yml --name <span class="nv">$ENVNAME</span>
-pip install -e pymultifracs
-</pre></div>
-</div>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="id4">
-<h2>Using pip<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/neurospin/pymultifracs
 pip install -e pymultifracs
 </pre></div>
 </div>
-<p>See the examples/ folder, mainly examples/Demo.ipynb and examples/Maquette.ipynb</p>
-</div>
+<p>To get started, look into the <cite>example/</cite> folder</p>
 </div>
 <div class="section" id="contents">
 <h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
